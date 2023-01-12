@@ -1,0 +1,76 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Redux Section and feild set": {
+		"scope": "javascript,typescript,php,html,xml,",
+		"prefix": "redux",
+		"body": [
+			"Redux::setSection($opt_name, [",
+			"'title' => 'Header Options',",
+			"  'desc'  => 'this section contains all header options',",
+			"  'id' => 'header_options',",
+			"'icon' => 'el el-website-alt',",
+			"    'subsection'    => true,",
+			" 'fields' => [",
+			" [",
+			"'title' => 'Logo Upload',",
+			" 'id'    => 'logo_upload',",
+			"'desc'  => 'Uplaod your Custom Logo from Here',",
+			" 'type'  => 'media',",
+
+			" ]",
+			" ],",
+			"]);"
+		],
+		"description": "SetSection For Redux Framework"
+	},
+	"Redux Section feild setup": {
+		"scope": "javascript,typescript,php,html,xml,",
+		"prefix": "rf",
+		"body": [
+			" [",
+			"'title' => 'Logo Upload',",
+			" 'id'    => 'logo_upload',",
+			"'desc'  => 'Uplaod your Custom Logo from Here',",
+			" 'type'  => 'media',",
+
+			" ]"
+		],
+		"description": "SetSection For Redux Framework"
+	},
+	"php Structure": {
+		"scope": "javascript,typescript,php,html,xml,",
+		"prefix": "php",
+		"body": [" <?php  ?>"],
+		"description": "outPUT PHP structure"
+	},
+	"Custom Widget Development": {
+		"scope": "javascript,typescript,php,html,xml,",
+		"prefix": "custom_widget",
+		"body": [
+			" class about_us_widget extends WP_Widget",
+			"{",
+			" public function __construct()",
+			"  {",
+			" parent::__construct('about_us_widget', 'About Us', [",
+			" 'descriptions' => 'This widget is for about info',",
+			"]);",
+			" }",
+
+			" public function widget($args, $instance)",
+			"{",
+			" }",
+
+			" public function form($instance)",
+			"{",
+			" }",
+			" }"
+		],
+		"description": "output custom widgets"
+	}
+}
